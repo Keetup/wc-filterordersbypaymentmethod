@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Filter Orders by Payment Method in Admin Order List for WooCommerce
+ * Plugin Name:       Filter Orders by Payment Method for WooCommerce
  * Plugin URI:        https://github.com/keetup/filterordersbypaymentmethodforwoocommerce
  * Description:       This plugin allows you to filter the WooCommerce order list by Payment Method.
  * Version:           1.0
