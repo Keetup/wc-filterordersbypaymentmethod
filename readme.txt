@@ -1,8 +1,8 @@
 === WC - Filter Orders by Payment Method ===
 Contributors: deomandeo
 Stable tag: 1.0
-Tested up to: 5.2
-Requires at least: 4.6
+Tested up to: Wordpress 5.2, WooCommerce 4.1
+Requires at least: Wordpress 4.6, WooCommerce 4.0
 License: GPL v2 or later
 
 This is a very simple but usefull Plugin
