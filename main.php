@@ -9,7 +9,7 @@
  * Author:            Damian Olivier
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       wc-filter-orders-by-payment-method
+ * Text Domain:       fobpmfwc
  */
 
 
@@ -18,7 +18,7 @@ function wc_fobpm_add_payment_method_column( $columns ) {
     foreach ( $columns as $column_name => $column_info ) {
         $new_columns[ $column_name ] = $column_info;
         if ( 'order_total' === $column_name ) {
-            $new_columns['order_payment'] = __( 'Payment Method', 'wc_fobpm' );
+            $new_columns['order_payment'] = __( 'Payment Method', 'fobpmfwc' );
         }
     }
     return $new_columns;
@@ -57,7 +57,7 @@ function wc_fobpm_add_filter_by_payment_method_orders() {
         $gateways = WC()->payment_gateways->payment_gateways();
         ?>
         <select name="_shop_order_payment_method" id="dropdown_shop_order_payment_method">
-            <option value=""><?php esc_html_e( 'All Payment Methods', 'wc_fobpm' ); ?></option>
+            <option value=""><?php esc_html_e( 'All Payment Methods', 'fobpmfwc' ); ?></option>
             <?php foreach ( $gateways as $id => $gateway ) : ?>
             <?php if($gateway->enabled == "yes") { ?>
             <option value="<?php echo esc_attr( $id ); ?>" <?php echo esc_attr( isset( $_GET['_shop_order_payment_method'] ) ? selected( $id, $_GET['_shop_order_payment_method'], false ) : '' ); ?>>
